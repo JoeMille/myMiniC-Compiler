@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/user/GitRepos/myMiniC-Compiler/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

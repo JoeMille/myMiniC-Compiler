@@ -1,0 +1,3 @@
+/home/user/GitRepos/myMiniC-Compiler/build/CMakeFiles/minic.dir
+/home/user/GitRepos/myMiniC-Compiler/build/CMakeFiles/edit_cache.dir
+/home/user/GitRepos/myMiniC-Compiler/build/CMakeFiles/rebuild_cache.dir

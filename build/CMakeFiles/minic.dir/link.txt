@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/minic.dir/link.d CMakeFiles/minic.dir/src/main.cpp.o -o minic
