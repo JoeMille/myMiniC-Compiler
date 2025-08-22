@@ -1,10 +1,12 @@
 #include <iostream>
+#include <sstream>
+#include "lexer.h"
 
-int main(int argc, char** argv) {
-    if(argc < 2) {
-        std::cerr << "usage: minic <file.c\n";
-        return 1;
+int main() {
+    std::string code = "int main(){ return 42; }";
+    LexResult r = lex(code);
+    for (auto& t : r.tokens) {
+        std::cout << t.line << ":" << t.col << " " << t.lexeme << "\n";
     }
-    std::cout << "Placeholder Compiler. Will read:" <<argv[1] << "\n";
     return 0;
 }

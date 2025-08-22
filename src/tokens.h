@@ -1,19 +1,14 @@
 #pragma once
 #include <string>
+#include <vector>
 
 struct Token {
     enum class Kind {
         End,
-        Indentifier,
+        Identifier,       
         IntLiteral,
-
-        // keywords
         KwInt, KwReturn, KwIf, KwElse, KwWhile,
-
-        // single char punct operators
-        LParen, RParen,
-        LBrace, RBrace,
-        Semicolon, Comma, 
+        LParen, RParen, LBrace, RBrace, Semicolon, Comma,
         Plus, Minus, Star, Slash, Percent,
         Assign
     };

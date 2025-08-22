@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/minic.dir/link.d"
+  "CMakeFiles/minic.dir/src/lexer.cpp.o"
+  "CMakeFiles/minic.dir/src/lexer.cpp.o.d"
   "CMakeFiles/minic.dir/src/main.cpp.o"
   "CMakeFiles/minic.dir/src/main.cpp.o.d"
   "minic"
