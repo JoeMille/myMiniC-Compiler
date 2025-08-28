@@ -7,4 +7,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(minic
 src/main.cpp
 src/lexer.cpp
+src/parser.cpp
 )

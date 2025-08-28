@@ -161,7 +161,9 @@ CMakeFiles/minic.dir/src/lexer.cpp.o
 
 CMakeFiles/minic.dir/src/main.cpp.o
  /home/user/GitRepos/myMiniC-Compiler/src/main.cpp
+ /home/user/GitRepos/myMiniC-Compiler/src/ast.h
  /home/user/GitRepos/myMiniC-Compiler/src/lexer.h
+ /home/user/GitRepos/myMiniC-Compiler/src/parser.h
  /home/user/GitRepos/myMiniC-Compiler/src/tokens.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
@@ -234,10 +236,15 @@ CMakeFiles/minic.dir/src/main.cpp.o
  /usr/include/bits/wchar.h
  /usr/include/bits/wctype-wchar.h
  /usr/include/bits/wordsize.h
+ /usr/include/c++/15.2.1/backward/auto_ptr.h
  /usr/include/c++/15.2.1/backward/binders.h
  /usr/include/c++/15.2.1/bit
+ /usr/include/c++/15.2.1/bits/align.h
  /usr/include/c++/15.2.1/bits/alloc_traits.h
+ /usr/include/c++/15.2.1/bits/allocated_ptr.h
  /usr/include/c++/15.2.1/bits/allocator.h
+ /usr/include/c++/15.2.1/bits/atomic_base.h
+ /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h
  /usr/include/c++/15.2.1/bits/basic_ios.h
  /usr/include/c++/15.2.1/bits/basic_ios.tcc
  /usr/include/c++/15.2.1/bits/basic_string.h
@@ -276,6 +283,9 @@ CMakeFiles/minic.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/bits/range_access.h
  /usr/include/c++/15.2.1/bits/refwrap.h
  /usr/include/c++/15.2.1/bits/requires_hosted.h
+ /usr/include/c++/15.2.1/bits/shared_ptr.h
+ /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h
+ /usr/include/c++/15.2.1/bits/shared_ptr_base.h
  /usr/include/c++/15.2.1/bits/sstream.tcc
  /usr/include/c++/15.2.1/bits/std_abs.h
  /usr/include/c++/15.2.1/bits/stl_algobase.h
@@ -286,12 +296,15 @@ CMakeFiles/minic.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h
  /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h
  /usr/include/c++/15.2.1/bits/stl_pair.h
+ /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h
+ /usr/include/c++/15.2.1/bits/stl_tempbuf.h
  /usr/include/c++/15.2.1/bits/stl_uninitialized.h
  /usr/include/c++/15.2.1/bits/stl_vector.h
  /usr/include/c++/15.2.1/bits/streambuf.tcc
  /usr/include/c++/15.2.1/bits/streambuf_iterator.h
  /usr/include/c++/15.2.1/bits/string_view.tcc
  /usr/include/c++/15.2.1/bits/stringfwd.h
+ /usr/include/c++/15.2.1/bits/unique_ptr.h
  /usr/include/c++/15.2.1/bits/uses_allocator.h
  /usr/include/c++/15.2.1/bits/uses_allocator_args.h
  /usr/include/c++/15.2.1/bits/utility.h
@@ -309,8 +322,10 @@ CMakeFiles/minic.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/debug/assertions.h
  /usr/include/c++/15.2.1/debug/debug.h
  /usr/include/c++/15.2.1/exception
+ /usr/include/c++/15.2.1/ext/aligned_buffer.h
  /usr/include/c++/15.2.1/ext/alloc_traits.h
  /usr/include/c++/15.2.1/ext/atomicity.h
+ /usr/include/c++/15.2.1/ext/concurrence.h
  /usr/include/c++/15.2.1/ext/numeric_traits.h
  /usr/include/c++/15.2.1/ext/string_conversions.h
  /usr/include/c++/15.2.1/ext/type_traits.h
@@ -319,8 +334,11 @@ CMakeFiles/minic.dir/src/main.cpp.o
  /usr/include/c++/15.2.1/iosfwd
  /usr/include/c++/15.2.1/iostream
  /usr/include/c++/15.2.1/istream
+ /usr/include/c++/15.2.1/memory
  /usr/include/c++/15.2.1/new
  /usr/include/c++/15.2.1/ostream
+ /usr/include/c++/15.2.1/pstl/execution_defs.h
+ /usr/include/c++/15.2.1/pstl/glue_memory_defs.h
  /usr/include/c++/15.2.1/pstl/pstl_config.h
  /usr/include/c++/15.2.1/sstream
  /usr/include/c++/15.2.1/stdexcept

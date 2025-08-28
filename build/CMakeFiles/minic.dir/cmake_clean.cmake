@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/minic.dir/src/lexer.cpp.o.d"
   "CMakeFiles/minic.dir/src/main.cpp.o"
   "CMakeFiles/minic.dir/src/main.cpp.o.d"
+  "CMakeFiles/minic.dir/src/parser.cpp.o"
+  "CMakeFiles/minic.dir/src/parser.cpp.o.d"
   "minic"
   "minic.pdb"
 )

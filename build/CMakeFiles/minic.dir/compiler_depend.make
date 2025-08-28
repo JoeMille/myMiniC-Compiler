@@ -159,7 +159,9 @@ CMakeFiles/minic.dir/src/lexer.cpp.o: /home/user/GitRepos/myMiniC-Compiler/src/l
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
 CMakeFiles/minic.dir/src/main.cpp.o: /home/user/GitRepos/myMiniC-Compiler/src/main.cpp \
+  /home/user/GitRepos/myMiniC-Compiler/src/ast.h \
   /home/user/GitRepos/myMiniC-Compiler/src/lexer.h \
+  /home/user/GitRepos/myMiniC-Compiler/src/parser.h \
   /home/user/GitRepos/myMiniC-Compiler/src/tokens.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -232,10 +234,15 @@ CMakeFiles/minic.dir/src/main.cpp.o: /home/user/GitRepos/myMiniC-Compiler/src/ma
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/c++/15.2.1/backward/auto_ptr.h \
   /usr/include/c++/15.2.1/backward/binders.h \
   /usr/include/c++/15.2.1/bit \
+  /usr/include/c++/15.2.1/bits/align.h \
   /usr/include/c++/15.2.1/bits/alloc_traits.h \
+  /usr/include/c++/15.2.1/bits/allocated_ptr.h \
   /usr/include/c++/15.2.1/bits/allocator.h \
+  /usr/include/c++/15.2.1/bits/atomic_base.h \
+  /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
   /usr/include/c++/15.2.1/bits/basic_ios.h \
   /usr/include/c++/15.2.1/bits/basic_ios.tcc \
   /usr/include/c++/15.2.1/bits/basic_string.h \
@@ -274,6 +281,9 @@ CMakeFiles/minic.dir/src/main.cpp.o: /home/user/GitRepos/myMiniC-Compiler/src/ma
   /usr/include/c++/15.2.1/bits/range_access.h \
   /usr/include/c++/15.2.1/bits/refwrap.h \
   /usr/include/c++/15.2.1/bits/requires_hosted.h \
+  /usr/include/c++/15.2.1/bits/shared_ptr.h \
+  /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
+  /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
   /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
   /usr/include/c++/15.2.1/bits/stl_algobase.h \
@@ -284,12 +294,15 @@ CMakeFiles/minic.dir/src/main.cpp.o: /home/user/GitRepos/myMiniC-Compiler/src/ma
   /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/15.2.1/bits/stl_pair.h \
+  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/15.2.1/bits/stl_vector.h \
   /usr/include/c++/15.2.1/bits/streambuf.tcc \
   /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/15.2.1/bits/string_view.tcc \
   /usr/include/c++/15.2.1/bits/stringfwd.h \
+  /usr/include/c++/15.2.1/bits/unique_ptr.h \
   /usr/include/c++/15.2.1/bits/uses_allocator.h \
   /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/15.2.1/bits/utility.h \
@@ -307,8 +320,10 @@ CMakeFiles/minic.dir/src/main.cpp.o: /home/user/GitRepos/myMiniC-Compiler/src/ma
   /usr/include/c++/15.2.1/debug/assertions.h \
   /usr/include/c++/15.2.1/debug/debug.h \
   /usr/include/c++/15.2.1/exception \
+  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
   /usr/include/c++/15.2.1/ext/alloc_traits.h \
   /usr/include/c++/15.2.1/ext/atomicity.h \
+  /usr/include/c++/15.2.1/ext/concurrence.h \
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
@@ -317,8 +332,11 @@ CMakeFiles/minic.dir/src/main.cpp.o: /home/user/GitRepos/myMiniC-Compiler/src/ma
   /usr/include/c++/15.2.1/iosfwd \
   /usr/include/c++/15.2.1/iostream \
   /usr/include/c++/15.2.1/istream \
+  /usr/include/c++/15.2.1/memory \
   /usr/include/c++/15.2.1/new \
   /usr/include/c++/15.2.1/ostream \
+  /usr/include/c++/15.2.1/pstl/execution_defs.h \
+  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
   /usr/include/c++/15.2.1/sstream \
   /usr/include/c++/15.2.1/stdexcept \
@@ -401,8 +419,6 @@ minic: /usr/lib/Scrt1.o \
 
 /usr/lib/libstdc++.so:
 
-/usr/lib/libm.so:
-
 /usr/lib/libgcc_s.so.1:
 
 /usr/lib/libgcc_s.so:
@@ -410,8 +426,6 @@ minic: /usr/lib/Scrt1.o \
 /usr/lib/libc.so:
 
 /usr/lib/crtn.o:
-
-/usr/include/sys/single_threaded.h:
 
 /usr/include/sched.h:
 
@@ -431,13 +445,21 @@ minic: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/sstream:
 
+/usr/include/c++/15.2.1/memory:
+
 /usr/include/c++/15.2.1/iostream:
 
-/usr/include/c++/15.2.1/istream:
+/usr/include/c++/15.2.1/ext/concurrence.h:
 
-/usr/include/c++/15.2.1/cwctype:
+/usr/include/c++/15.2.1/bits/unique_ptr.h:
 
 /usr/include/c++/15.2.1/bits/streambuf_iterator.h:
+
+/usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/15.2.1/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/15.2.1/bits/shared_ptr.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
@@ -450,6 +472,18 @@ minic: /usr/lib/Scrt1.o \
 /usr/lib/libc_nonshared.a:
 
 /usr/include/c++/15.2.1/bits/basic_ios.h:
+
+/usr/include/c++/15.2.1/bits/atomic_base.h:
+
+/usr/include/c++/15.2.1/istream:
+
+/usr/include/c++/15.2.1/cwctype:
+
+/usr/include/c++/15.2.1/bits/allocated_ptr.h:
+
+/usr/lib/libm.so:
+
+/usr/include/c++/15.2.1/backward/auto_ptr.h:
 
 /usr/include/bits/types/struct_tm.h:
 
@@ -466,6 +500,10 @@ minic: /usr/lib/Scrt1.o \
 /usr/include/asm/posix_types.h:
 
 /usr/include/asm-generic/int-ll64.h:
+
+/usr/include/sys/single_threaded.h:
+
+/home/user/GitRepos/myMiniC-Compiler/src/parser.h:
 
 /home/user/GitRepos/myMiniC-Compiler/src/main.cpp:
 
@@ -563,6 +601,8 @@ minic: /usr/lib/Scrt1.o \
 
 /usr/include/bits/types/clockid_t.h:
 
+/usr/include/c++/15.2.1/pstl/execution_defs.h:
+
 /usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/bits/time.h:
@@ -596,6 +636,8 @@ minic: /usr/lib/Scrt1.o \
 /usr/include/bits/floatn-common.h:
 
 /usr/include/pthread.h:
+
+/home/user/GitRepos/myMiniC-Compiler/src/ast.h:
 
 /home/user/GitRepos/myMiniC-Compiler/src/lexer.h:
 
@@ -701,6 +743,8 @@ minic: /usr/lib/Scrt1.o \
 
 /usr/include/bits/struct_mutex.h:
 
+/usr/include/c++/15.2.1/bits/stl_tempbuf.h:
+
 /usr/include/asm-generic/bitsperlong.h:
 
 /usr/include/bits/wchar.h:
@@ -729,6 +773,8 @@ minic: /usr/lib/Scrt1.o \
 
 /usr/include/c++/15.2.1/bits/cxxabi_forced.h:
 
+/usr/include/c++/15.2.1/bits/shared_ptr_base.h:
+
 /usr/include/c++/15.2.1/bits/erase_if.h:
 
 /usr/include/bits/wordsize.h:
@@ -736,6 +782,8 @@ minic: /usr/lib/Scrt1.o \
 /usr/include/c++/15.2.1/bits/exception.h:
 
 /usr/include/c++/15.2.1/streambuf:
+
+/usr/include/c++/15.2.1/bits/align.h:
 
 /usr/include/c++/15.2.1/bits/functexcept.h:
 
@@ -765,6 +813,8 @@ CMakeFiles/minic.dir/src/lexer.cpp.o:
 
 /usr/include/c++/15.2.1/bits/range_access.h:
 
+/usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h:
+
 /usr/include/bits/types/error_t.h:
 
 /usr/include/c++/15.2.1/bits/requires_hosted.h:
@@ -788,6 +838,8 @@ CMakeFiles/minic.dir/src/main.cpp.o:
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/c++/15.2.1/pstl/pstl_config.h:
+
+/usr/include/c++/15.2.1/pstl/glue_memory_defs.h:
 
 /usr/include/c++/15.2.1/ios:
 

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/user/GitRepos/myMiniC-Compiler/src/lexer.cpp" "CMakeFiles/minic.dir/src/lexer.cpp.o" "gcc" "CMakeFiles/minic.dir/src/lexer.cpp.o.d"
   "/home/user/GitRepos/myMiniC-Compiler/src/main.cpp" "CMakeFiles/minic.dir/src/main.cpp.o" "gcc" "CMakeFiles/minic.dir/src/main.cpp.o.d"
+  "/home/user/GitRepos/myMiniC-Compiler/src/parser.cpp" "CMakeFiles/minic.dir/src/parser.cpp.o" "gcc" "CMakeFiles/minic.dir/src/parser.cpp.o.d"
   "" "minic" "gcc" "CMakeFiles/minic.dir/link.d"
   )
 
