@@ -5,6 +5,7 @@ minic: \
   CMakeFiles/minic.dir/src/main.cpp.o \
   CMakeFiles/minic.dir/src/lexer.cpp.o \
   CMakeFiles/minic.dir/src/parser.cpp.o \
+  CMakeFiles/minic.dir/src/codegen_arm.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -44,6 +45,8 @@ CMakeFiles/minic.dir/src/main.cpp.o:
 CMakeFiles/minic.dir/src/lexer.cpp.o:
 
 CMakeFiles/minic.dir/src/parser.cpp.o:
+
+CMakeFiles/minic.dir/src/codegen_arm.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so:
 

@@ -2,6 +2,7 @@
 #include <sstream>
 #include "lexer.h"
 #include "parser.h"
+#include "codegen_arm.h"
 
 int main() {
     std::string code = "int main(){ return 42; }";
@@ -18,6 +19,7 @@ int main() {
     }
     if (!pr.program.functions.empty()) {
         std::cout << "Parsed function: " << pr.program.functions[0].name << "\n";
+        std::cout << "\n--- ARM Thumb ---\n" << emitArm(pr.program) << "\n";
     }
     return 0;
 }

@@ -8,4 +8,5 @@ add_executable(minic
 src/main.cpp
 src/lexer.cpp
 src/parser.cpp
+src/codegen_arm.cpp
 )

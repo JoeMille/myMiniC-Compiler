@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/user/GitRepos/myMiniC-Compiler/src/codegen_arm.cpp" "CMakeFiles/minic.dir/src/codegen_arm.cpp.o" "gcc" "CMakeFiles/minic.dir/src/codegen_arm.cpp.o.d"
   "/home/user/GitRepos/myMiniC-Compiler/src/lexer.cpp" "CMakeFiles/minic.dir/src/lexer.cpp.o" "gcc" "CMakeFiles/minic.dir/src/lexer.cpp.o.d"
   "/home/user/GitRepos/myMiniC-Compiler/src/main.cpp" "CMakeFiles/minic.dir/src/main.cpp.o" "gcc" "CMakeFiles/minic.dir/src/main.cpp.o.d"
   "/home/user/GitRepos/myMiniC-Compiler/src/parser.cpp" "CMakeFiles/minic.dir/src/parser.cpp.o" "gcc" "CMakeFiles/minic.dir/src/parser.cpp.o.d"

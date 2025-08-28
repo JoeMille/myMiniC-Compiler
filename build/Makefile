@@ -129,6 +129,30 @@ minic/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/minic.dir/build.make CMakeFiles/minic.dir/build
 .PHONY : minic/fast
 
+src/codegen_arm.o: src/codegen_arm.cpp.o
+.PHONY : src/codegen_arm.o
+
+# target to build an object file
+src/codegen_arm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minic.dir/build.make CMakeFiles/minic.dir/src/codegen_arm.cpp.o
+.PHONY : src/codegen_arm.cpp.o
+
+src/codegen_arm.i: src/codegen_arm.cpp.i
+.PHONY : src/codegen_arm.i
+
+# target to preprocess a source file
+src/codegen_arm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minic.dir/build.make CMakeFiles/minic.dir/src/codegen_arm.cpp.i
+.PHONY : src/codegen_arm.cpp.i
+
+src/codegen_arm.s: src/codegen_arm.cpp.s
+.PHONY : src/codegen_arm.s
+
+# target to generate assembly for a file
+src/codegen_arm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minic.dir/build.make CMakeFiles/minic.dir/src/codegen_arm.cpp.s
+.PHONY : src/codegen_arm.cpp.s
+
 src/lexer.o: src/lexer.cpp.o
 .PHONY : src/lexer.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... minic"
+	@echo "... src/codegen_arm.o"
+	@echo "... src/codegen_arm.i"
+	@echo "... src/codegen_arm.s"
 	@echo "... src/lexer.o"
 	@echo "... src/lexer.i"
 	@echo "... src/lexer.s"
